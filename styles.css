@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1f4b; /* dark blue */
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* MAIN */
+.mainBox {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* GRID */
+.container1 {
+  display: flex;
+  gap: 20px;
+}
+
+/* BOXES */
+.searchBox,
+.weatherBox {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* HEADINGS */
+h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* INPUT */
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+#cityInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* BUTTON */
+#btn {
+  padding: 10px 15px;
+  background: #ff5a3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background: #e04b2f;
+}
+
+/* SEARCH HISTORY */
+.searchedCities {
+  margin-top: 15px;
+}
+
+.chip {
+  display: inline-block;
+  margin: 4px;
+  padding: 5px 10px;
+  background: #eee;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* WEATHER DATA */
+.weather-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ERROR */
+.error {
+  color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+  }
+}
